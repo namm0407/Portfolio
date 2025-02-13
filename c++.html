@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Game</title>
+    <style>
+        body{
+            background: black;
+            color: aliceblue;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+            padding: 10px 10%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center; /* Aligns images to left and right */
+            margin-left: 0px; /* Moves the container to the right */
+        }
+
+        img {
+            max-width: 105%;
+            height: auto;
+            padding: 10px; /* Padding around images */
+        }
+
+        p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        a {
+            display: inline-block;
+            background-color: #444;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #666;
+        }
+
+        .link-container{
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            background-color: #444;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Maze Game</h1>
+    <div class="image-container">
+        <img src="maze.png" alt="error"> 
+    </div>
+    <p>"The Maze", an exciting and challenging 2D game with life points and limited number of moves to
+        increase the challenge of the game. The player needs to go from the starting point to the exit while
+        avoiding the monsters and dead-ends. The maze layouts and the monsters' placements are randomly
+        generated, ensuring a fresh and unpredictable experience every time you play</p>
+    <div class="link-container">
+        <a href="https://github.com/namm0407/Maze-game">Go to GitHub</a>
+    </div>
+    <button onclick="window.close()">Close Tab</button>
+</body>
+</html>

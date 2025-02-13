@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="home">
+        <div class="page">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#certificate">Certificates</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="homeText">
+                <!--- <img src="1.jpg" alt="girl" width="104" height="142">  -->
+                <h1>SALLY</h1>
+                <h2>Po Tsoi Nam</h2>
+                <br>
+                <a href="https://www.linkedin.com/in/tsoi-nam-p-a65325332/" style="margin-right: 20px; font-size: 30px;"><i class="fa-brands fa-linkedin" style="color: white;"></i></a>
+                <a href="https://github.com/namm0407" style="font-size: 30px;"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+                <p>An enthusiastic, self-driven, dedicated computer science student at the University of Hong Kong with a curious mind who enjoys solving complex and challenging real-world problems.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="about">
+        <div class="page">
+            <div class="pic">
+                <h1>About Me</h1>
+                <h3>“Programming isn’t about what you know, it’s about what you can figure out.” – Chris Pine</h3>
+            </div>
+            <br>
+            <p>My interest began when I joined a program made by Microsoft in F2. They taught us how use to code to control LED lights. I found it fascinating to see how lines of code could bring lights to life, changing colors and patterns based on my commands.</p>
+            <br>
+            <p>This experience sparked my curiosity about how programming works and how it can be applied to solve real-world problems. It was a pivotal moment that influenced my decision to pursue a computer science major in university. I wanted to delve deeper into the world of programming and learn how to create even more complex and impactful projects. The creativity and problem-solving aspects of programming continue to motivate me every day.</p>
+            <br>
+            <div class="category">  
+                <p class="col active-link" onclick="opentab(event, 'skills')">Skills</p>
+                <p class="col" onclick="opentab(event, 'edu')">Education</p>
+                <!-- <p class="col" onclick="opentab('exp')">Experience</p> -->
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Programming Languages</span><br>Python, C++, C language, R lauguage, HTML, CSS, JavaScript, Bash</li>
+                    <li><span>Databases</span><br>MySQL, MongoDB</li>
+                    <li><span>Frameworks</span><br>Node.js</li>
+                    <li><span>Tools & Technologies</span><br>Git, Docker</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="edu">
+                <b>The University of Hong Kong</b>
+                <p>Bachelor of Science in Computer Science</p>
+                <br>
+                <p>Period of study : 2023.09.01 - 2027.06.30</p>
+                <p>Relevant Coursework: Data Structures and Algorithms, Operating Systems, Database Systems, Software Engineering, Machine Learning</p>
+            </div>
+
+            <!-- <div class="tab-contents" id="exp"></div> -->
+        </div>
+    </div>
+
+    <div id="project">
+        <div class="page">
+            <div id="main" class="web active">
+                <h1>My Projects</h1>
+                <div class="project-list">
+                    <div onclick="window.open('python.html', '_blank')">                   
+                        <i class="fa-brands fa-fort-awesome fa-flip-horizontal" style="color: #ffffff;"></i>                    
+                        <h4>Adventure Game (Python)</h4>
+                        <p> The player have to pass 3 different games to get to the end and save the boy —- water pipe, minesweeper, grid games, each game with different level of difficulties.</p>
+                    </div>
+                    <div onclick="window.open('c++.html', '_blank')">
+                        <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                        <h4>Maze Game (C++)</h4>
+                        <p>The Maze, is strategic game where player needs to go the exit while avoiding the monsters and pick up the tools. The maze layouts and the monsters are randomly generated.</p>
+                    </div>
+                    <div onclick="window.open('html.html', '_blank')">
+                        <i class="fa-solid fa-users" style="color: #ffffff;"></i>                    
+                        <h4>Personal Portfolio Website (HTML, CSS, JS)</h4>
+                        <p>The website showcases my skills, projects, and professional journey. Showing  my passion for programming and my commitment to continuous learning in the field</p>
+                    </div>
+                </div>
+            </div>
+        
+        <!--
+            <div id="python" class="web">
+                <h1>Adventure Game (Python)</h1>
+                <p>Detailed information about the Adventure Game.</p>
+                <button onclick="showPage('main')">Back</button>
+            </div>
+            <div onclick="showPage('html')">                    
+                <i class="fa-solid fa-users" style="color: #ffffff;"></i>                    
+                <h4>Personal Portfolio Website (HTML, CSS, JS)</h4>
+                <p>The website showcases my skills, projects, and professional journey. Showing  my passion for programming and my commitment to continuous learning in the field</p>
+            </div>
+        -->
+
+        </div>
+    </div>
+
+    <div id="certificate">
+        <div class="page">
+            <h1>Certificates</h1>
+            <div class="box-container"></div>
+                <div class="box">
+                    <img src="waterloo.png" alt="error">
+                    <div class="text">
+                        <h4>The CENTER for education in MATHEMATICS and COMPUTING</h4>
+                        <p>Given by University of Waterloo</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="microsoft.jpg" alt="error">
+                    <div class="text">
+                        <h4>GirlSpark Infinite</h4>
+                        <p>Given by Microsoft</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="behavior.js"></script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed; /* Make the header fixed */
+    background-color: black;
+    top: 0; /* Stick it to the top */
+    left: 0;
+    width: 100%; /* Full width */
+    padding: 10px; /* Add some padding */
+    z-index: 1000; /* Ensure it stays above other content */
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+body{
+    background: black;
+    color: aliceblue;
+}
+
+nav {
+    display: flex;           /* flexbox */
+    justify-content: center; /* Center the items horizontally */
+}
+
+nav ul li {
+    display: inline-block;   /* Keep inline-block for individual items */
+    list-style: none;       /* Remove bullet points */
+    margin: 10px 20px ;      
+    padding: 0; 
+}
+
+nav ul li a{
+    color: azure;
+    text-decoration: none; /*remove the underline*/
+    font-size: 18px;
+    position: relative; /*Establishes a positioning context for the link. allows child elements (like the ::after pseudo-element) to be positioned relative to this anchor*/
+}
+
+nav ul li a::after {
+    content: ''; /* This creates an empty element */
+    width: 0; /* Initial width */
+    height: 3px; /* Height of the underline */
+    background: plum; /* Color of the underline */
+    position: absolute; /* Positioning relative to the parent */
+    left: 0; /* Start from the left */
+    bottom: -6px; /* Place it below the text */
+    transition: width 0.5s; /* Smooth transition effect */
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+#home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(1.jpg);
+    background-size: 30%;
+    background-position: calc(100% - 150px) center;
+    background-repeat: no-repeat; 
+}
+
+.page{
+    padding: 10px 10%;
+}
+
+.homeText{
+    font-size: 18px;
+}
+
+.homeText h1{
+    margin-top:15%;
+    font-size: 70px;
+    color: plum;
+}
+
+.homeText h2{
+    color: rgb(129, 135, 239);
+    font-size: 20px;
+}
+
+.homeText p{
+    margin-top: 5%;
+    margin-right: 50%;
+}
+
+/* About */
+#about{
+    padding: 80px 0;
+}
+
+.pic {
+    width: 100%;
+    height: 40vh;
+    background-image: url(2.jpg);
+    background-size: 20%;
+    background-position: calc(100% - 90px) center;
+    background-repeat: no-repeat;
+}
+
+.page h3{
+    font-style: italic;
+    color: plum;
+    margin-top: 7%;
+    margin-right: 50%;
+    font-size: 24px;
+}
+
+.category{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.col{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.col::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: plum;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+.col:hover::after, 
+.col.active::after { /* Keep the underline for active class */
+    width: 100%;
+}
+
+.col.active-link::after{
+    width: 100%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: plum;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/*project*/
+#project{
+    padding: 30px 0;
+}
+
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.project-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px; /*the boxes are round*/
+    transition: background 0.5s, transform 0.5s; /* for hover function*/
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.project-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.project-list div h4{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.project-list div:hover{
+    background: rgb(193, 145, 193);
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.web {
+    display: none; /* Hide all pages by default */
+}
+.active {
+    display: block; /* Show the active page */
+}
+
+/*certificate*/
+
+/*
+.box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.box {
+    display: flex;
+    background: #222; /* Dark background for boxes *
+    border: 2px solid purple; /* Purple border *
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.box img {
+    max-width: 10%;
+    height: auto;
+    padding: 10px; /*Padding around images *
+}
+.box h4, .box p {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .box {
+        flex-direction: column;
+    }
+    .box img {
+        width: 100%; /* Full width on small screens *
+    }
+}
+*/
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    
+}
+.box {
+    border-left: 6px solid plum;
+    background-color:  #262626 ;
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+    /*border-radius: 8px; */
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+.box img {
+    width: 70px;
+    height: auto;
+    margin-right: 10px;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+}
+.text h4{
+    font-size: 19px;
+}
+@media (max-width: 600px) {
+    .box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .box img {
+        margin-bottom: 10px;
+    }
+}
