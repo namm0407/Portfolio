@@ -164,6 +164,10 @@ nav ul li a:hover::after {
     display: block;
 }
 
+.purple {
+    color: plum;
+}
+
 /*project*/
 #project{
     padding: 30px 0;
