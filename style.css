@@ -66,7 +66,7 @@ nav ul li a:hover::after {
     height: 100vh;
     background-image: url(1.jpg);
     background-size: 30%;
-    background-position: calc(100% - 150px) center;
+    background-position: calc(100% - 80px) center;
     background-repeat: no-repeat; 
 }
 
@@ -277,6 +277,23 @@ nav ul li a:hover::after {
 .text h4{
     font-size: 19px;
 }
+
+/* Base styles for mobile */
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 10px;
+}
+
+/* Styles for larger screens */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+    padding: 20px;
+  }
+}
+
+/*
 @media (max-width: 600px) {
     .box {
         flex-direction: column;

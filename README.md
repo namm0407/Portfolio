@@ -6,7 +6,8 @@ The website showcases my skills, projects, and professional journey, highlightin
 * HTML5
 * CSS3
 * JavaScript
-* VsCode
+
+icons from: https://fontawesome.com/search
 
 ## Features 📋
 ⚡️ Fully Responsive
@@ -27,3 +28,4 @@ The website showcases my skills, projects, and professional journey, highlightin
 ✔️ Projects
 
 ✔️ Certificates
+
