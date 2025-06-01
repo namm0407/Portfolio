@@ -15,28 +15,29 @@
             padding: 0;
             font-family: 'Poppins', sans-serif;
             box-sizing: border-box;
-            padding: 10px 10%;
+            padding-left: 8%;
+            padding-right: 8%;
         }
 
         h1 {
             text-align: center;
-        }
-
-        .image-container {
-            display: flex;
-            justify-content: center; /* Aligns images to left and right */
-            margin-left: 0px; /* Moves the container to the right */
-        }
-
-        img {
-            max-width: 105%;
-            height: auto;
-            padding: 10px; /* Padding around images */
+            padding-top: 50px;
+            padding-bottom: 30px;
         }
 
         p {
             margin: 10px 0;
             line-height: 1.6;
+        }
+
+        ul, li {
+            margin-left: 20px;
+            margin-top: 15px;
+            line-height: 1.6;
+        }
+
+        .point {
+            list-style-type: upper-roman;
         }
 
         a {
@@ -56,6 +57,7 @@
         .link-container{
             display: flex;
             justify-content: center;
+            margin-top: 50px;
         }
 
         button {
@@ -66,6 +68,7 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            margin-top: 30px;
         }
 
         button:hover {
@@ -76,14 +79,21 @@
 
 <body>
     <h1>Passenger Travel Across Control Points In Hong Kong</h1>
-    <div class="image-container">
-        <img src="html.png" alt="error"> 
-    </div>
-    <p>Developed a personal portfolio website from scratch using HTML, CSS, and JavaScript</p>
-    <p>The website showcases my skills, projects, and professional journey, highlighting my ability to create responsive and user-friendly interfaces. This project reflects my passion for web development and my commitment to continuous learning in the field.</p>
+
+    <h3>5 functions</h3>
+
+    <ul class="point">
+        <li>monitors the database connection & terminates the program if the connection to the database is lost</li>
+        <li>express routing handler to handle all GET requests for a specific date or a range of dates starting from a specific date</li>
+        <li>an express routing handler to handle all GET requests for a specific year or a specific month within a given year</li>
+        <li>an express routing handler to handle POST requests for adding new records to the MongoDB database</li>
+        <li>an express routing handler to intercept all request types and paths, which are not defined in previous tasks</li>
+    </ul>
+
     <div class="link-container">
-        <a href="">Go to GitHub</a>
+        <a href="https://github.com/namm0407/Passenger-travel-across-control-points-in-Hong-Kong" target="_blank" rel="noopener noreferrer">Go to GitHub</a>
     </div>
+
     <button onclick="window.close()">Close Tab</button>
 </body>
 </html>
