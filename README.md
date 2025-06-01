@@ -27,5 +27,7 @@ icons from: https://fontawesome.com/search
   
 ✔️ Projects
 
+✔️ Blogs
+
 ✔️ Certificates
 
