@@ -9,23 +9,26 @@ html {
     scroll-behavior: smooth;
 }
 
+
+body{
+    background: linear-gradient(45deg, rgba(20, 20, 20, 0.9), black);
+    color: aliceblue;
+}
+
 header {
     position: fixed; /* Make the header fixed */
-    background-color: black;
-    top: 0; /* Stick it to the top */
-    left: 0;
-    width: 100%; /* Full width */
-    padding: 10px; /* Add some padding */
+    background: linear-gradient(4deg, rgba(25, 23, 26, 0.74), rgb(65, 61, 68));
+    top: 1rem; /* Stick it to the top */
+    width: 80%; /* Full width */
     z-index: 1000; /* Ensure it stays above other content */
     display: flex; /* Use Flexbox */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
+    border-radius: 30px;
+    border: 1px solid rgb(78, 77, 75);
+    box-shadow: 0 6px 6px rgb(64, 64, 68);
 }
 
-body{
-    background: black;
-    color: aliceblue;
-}
 
 nav {
     display: flex;           /* flexbox */
