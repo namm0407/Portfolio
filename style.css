@@ -104,10 +104,9 @@ nav ul li a:hover::after {
 /*Home*/
 #home{
     width: 100%;
-    height: 100vh;
     background-image: url(1.jpg);
     background-size: 30%;
-    background-position: calc(100% - 70px) center;
+    background-position: calc(100% - 10%) 80%;
     background-repeat: no-repeat;
     margin-top: 0px;
 }
