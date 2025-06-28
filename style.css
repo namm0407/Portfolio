@@ -31,7 +31,7 @@ header {
     position: fixed; /* Make the header fixed */
     background: linear-gradient(4deg, rgba(25, 23, 26, 0.74), rgb(65, 61, 68));
     top: 1rem; /* Stick it to the top */
-    width: 80%; /* Set width */
+    max-width: 100%; /* Set width */
     left: 50%; /* Move to the center of the page */
     transform: translateX(-50%); /* Offset by half its width to center */
     z-index: 1000; /* Ensure it stays above other content */
@@ -48,17 +48,28 @@ nav {
     justify-content: center; /* Center the items horizontally */
 }
 
+nav ul {
+    display: flex; /* Use Flexbox for horizontal list */
+    justify-content: space-evenly; /* Center the list items */
+    list-style: none; /* Remove default bullets */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    white-space: nowrap; /* Prevent text from wrapping */
+    border-radius: 20px; /* Rounded edges like the image */
+    padding: 0.25rem 0.5rem; /* Inner padding for nav */
+}
+
 nav ul li {
     display: inline-block;   /* Keep inline-block for individual items */
     list-style: none;       /* Remove bullet points */
-    margin: 10px 20px ;      
+    margin: 5px 20px ;      
     padding: 0; 
 }
 
 nav ul li a{
     color: azure;
     text-decoration: none; /*remove the underline*/
-    font-size: 18px;
+    font-size: 13px;
     position: relative; /*Establishes a positioning context for the link. allows child elements (like the ::after pseudo-element) to be positioned relative to this anchor*/
 }
 
