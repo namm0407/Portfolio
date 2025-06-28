@@ -89,7 +89,7 @@ nav ul li a:hover::after {
 }
 
 .page {
-    margin-top: 200px;
+    margin-top: 70px;
 }
 
 /*Home*/
@@ -98,9 +98,9 @@ nav ul li a:hover::after {
     height: 100vh;
     background-image: url(1.jpg);
     background-size: 30%;
-    background-position: calc(100% - 80px) center;
+    background-position: calc(100% - 70px) center;
     background-repeat: no-repeat;
-    margin-top: 80px;
+    margin-top: 0px;
 }
 
 .page{
