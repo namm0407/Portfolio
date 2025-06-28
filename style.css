@@ -9,26 +9,39 @@ html {
     scroll-behavior: smooth;
 }
 
+:root {
+    --background-color: black;
+    --slider-bg-color: black;
+    --slider-circle-color: black;
+}
+
+[data-theme="dark"] {
+    --background-color: white;
+    --slider-bg-color: white;
+    --slider-circle-color: white;
+}
 
 body{
-    background: linear-gradient(45deg, rgba(20, 20, 20, 0.9), black);
-    color: aliceblue;
+    background-color: var(--background-color);
+    color: white;
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 header {
     position: fixed; /* Make the header fixed */
     background: linear-gradient(4deg, rgba(25, 23, 26, 0.74), rgb(65, 61, 68));
     top: 1rem; /* Stick it to the top */
-    width: 80%; /* Full width */
+    width: 80%; /* Set width */
+    left: 50%; /* Move to the center of the page */
+    transform: translateX(-50%); /* Offset by half its width to center */
     z-index: 1000; /* Ensure it stays above other content */
     display: flex; /* Use Flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
     border-radius: 30px;
     border: 1px solid rgb(78, 77, 75);
     box-shadow: 0 6px 6px rgb(64, 64, 68);
 }
-
 
 nav {
     display: flex;           /* flexbox */
