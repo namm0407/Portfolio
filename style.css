@@ -138,11 +138,24 @@ nav ul li a:hover::after {
 /* About */
 .pic {
     width: 100%;
-    background-image: url(2.jpg);
-    background-size: 20%;
-    background-position: calc(100% - 10%) 100%;
-    background-repeat: no-repeat;
     margin-top: 0px;
+    position: relative; /* For positioning content over the image */
+}
+
+.pic img {
+    width: auto; /* Adjust size as needed */
+    height: 90%; /* Maintains aspect ratio */
+    object-fit: contain; /* Ensures the whole image is visible */
+    position: absolute;
+    bottom: 0;
+    right: 10%; /* Matches your calc(100% - 10%) 100% positioning */
+}
+
+@media (max-width: 600px) {
+  .pic img {
+    height: 20%;   
+    right: 5%;
+  }
 }
 
 .purple_italic{
