@@ -6,7 +6,7 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></head>
 <body>
     <header>
         <nav>
@@ -24,8 +24,8 @@
         <div class="page">
             <div class="homeText">
                 <!-- <img src="1.jpg" alt="girl" width="104" height="142"> -->
-                <h1>SALLY</h1>
-                <h2>Po Tsoi Nam</h2>
+                <h1 data-aos="fade-up" data-aos-duration="1000">SALLY</h1>
+                <h2 >Po Tsoi Nam</h2>
                 <br>
                 <a href="https://www.linkedin.com/in/tsoi-nam-p-a65325332/" style="margin-right: 20px; font-size: 30px;"><i class="fa-brands fa-linkedin" style="color: white;"></i></a>
                 <a href="https://github.com/namm0407" style="margin-right: 20px; font-size: 30px;"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
@@ -215,5 +215,11 @@
         </div>
     </div>
     <script src="behavior.js"></script>
+    <!-- Include AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+    </script>
 </body>
 </html>
