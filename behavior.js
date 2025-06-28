@@ -21,3 +21,8 @@ function showPage(pageId) {
     // Show the selected page
     document.getElementById(pageId).classList.add('active');
 }
+
+document.querySelectorAll('h1').forEach((el, index) => {
+    el.setAttribute('data-aos', 'zoom-in');
+    el.setAttribute('data-aos-duration', '500');
+});
