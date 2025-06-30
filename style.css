@@ -15,34 +15,6 @@ body{
     transition: background-color 0.3s, color 0.3s; 
 }
 
-body.light-mode {
-    background-color: rgb(255, 254, 251);
-    color: black;
-}
-
-
-
-#theme {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    z-index: 1000;
-    background-color: rgba(221, 160, 221, 0.954);
-    color: white;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 15px;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-#theme:hover {
-    background-color: rgba(221, 160, 221, 0.763);
-    transform: scale(1.05);
-}
-
 header {
     position: fixed; /* Make the header fixed */
     background: linear-gradient(4deg, rgba(25, 23, 26, 0.74), rgb(65, 61, 68));
@@ -449,4 +421,31 @@ body {
 #back-to-top:hover {
     background-color: rgba(221, 160, 221, 0.747);
     transform: scale(1.1);
+}
+
+/*light mode*/
+body.light-mode {
+    background-color: rgb(255, 254, 251);
+    color: black;
+}
+
+#theme {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    background-color: rgba(221, 160, 221, 0.954);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#theme:hover {
+    background-color: rgba(221, 160, 221, 0.763);
+    transform: scale(1.05);
 }
