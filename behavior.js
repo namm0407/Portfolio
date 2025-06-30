@@ -26,3 +26,23 @@ document.querySelectorAll('h1').forEach((el, index) => {
     el.setAttribute('data-aos', 'zoom-in');
     el.setAttribute('data-aos-duration', '500');
 });
+
+// Get the button
+const backToTopButton = document.getElementById('back-to-top');
+
+// Show button when scrolling down
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) { // Show button after scrolling 300px
+        backToTopButton.style.display = 'block';
+    } else {
+        backToTopButton.style.display = 'none';
+    }
+});
+
+// Smooth scroll to top when button is clicked
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
