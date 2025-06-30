@@ -445,8 +445,7 @@ body {
     transform: scale(1.05);
 }
 
-
-
+/*project*/
 body.light-mode {
     background-color: rgb(255, 255, 255); /* White or light background in light mode */
     color: black; /* Black text for readability in light mode */
@@ -464,3 +463,6 @@ body.light-mode .project-list div i {
 body.light-mode .project-list div:hover {
     background: rgb(228, 183, 228); /* Hover effect */
 }
+
+/*blogs*/
+
