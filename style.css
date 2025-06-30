@@ -101,6 +101,24 @@ nav ul li a:hover::after {
   }
 }
 
+/*welcome*/
+.welcome {
+    font-size: 3.5rem; /* Large text size */
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 175, 255);
+    text-align: center;
+    margin: 200px 0;
+    opacity: 0; /* Start invisible */
+    animation: fadeIn 2s ease-in forwards; /* Fade-in animation */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(80px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
 /*Home*/
 #home{
     width: 100%;
