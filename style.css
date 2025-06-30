@@ -9,22 +9,38 @@ html {
     scroll-behavior: smooth;
 }
 
-:root {
-    --background-color: black;
-    --slider-bg-color: black;
-    --slider-circle-color: black;
-}
-
-[data-theme="dark"] {
-    --background-color: white;
-    --slider-bg-color: white;
-    --slider-circle-color: white;
-}
-
 body{
-    background-color: var(--background-color);
-    color: white;
+    background-color: rgb(0, 0, 0);
+    color: rgb(194, 204, 219);
     transition: background-color 0.3s, color 0.3s; 
+}
+
+body.light-mode {
+    background-color: rgb(255, 254, 251);
+    color: black;
+}
+
+
+
+#theme {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    background-color: rgba(221, 160, 221, 0.954);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#theme:hover {
+    background-color: rgba(221, 160, 221, 0.763);
+    transform: scale(1.05);
 }
 
 header {

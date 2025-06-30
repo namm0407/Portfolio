@@ -1,5 +1,6 @@
 var collinks = document.getElementsByClassName("col");
 var tabcontents = document.getElementsByClassName("tab-contents");
+const themeButton = document.getElementById('theme');
 
 function opentab(event, colname) {
     for(col of collinks) {
@@ -45,4 +46,13 @@ backToTopButton.addEventListener('click', () => {
         top: 0,
         behavior: 'smooth'
     });
+});
+
+themeButton.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+    if (document.body.classList.contains('light-mode')) {
+        themeButton.textContent = 'Light Mode';
+    } else {
+        themeButton.textContent = 'Dark Mode';
+    }
 });
