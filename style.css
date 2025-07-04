@@ -473,3 +473,9 @@ body.light-mode .blog-container{
 body.light-mode .blog-container:hover {
     background: rgb(252, 225, 252); /* Hover effect */
 }
+
+/*light mode -- blogs*/
+body.light-mode .box{
+    background: rgba(238, 236, 238, 0.806); /* Lighter grey for project list items */
+    color: black; /* Black text for readability */
+}
