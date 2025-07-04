@@ -479,3 +479,13 @@ body.light-mode .box{
     background: rgba(238, 236, 238, 0.806); /* Lighter grey for project list items */
     color: black; /* Black text for readability */
 }
+
+/*light mode -- header*/
+body.light-mode header {
+    background: linear-gradient(4deg, rgb(231, 214, 233), rgb(255, 255, 255));
+    box-shadow: 0 6px 6px rgb(198, 198, 202);
+}
+
+body.light-mode nav ul li a{
+    color: black;
+}
