@@ -445,14 +445,14 @@ body {
     transform: scale(1.05);
 }
 
-/*project*/
 body.light-mode {
     background-color: rgb(255, 255, 255); /* White or light background in light mode */
     color: black; /* Black text for readability in light mode */
 }
 
+/*light mode -- project*/
 body.light-mode .project-list div {
-    background: rgba(237, 218, 237, 0.806); /* Lighter grey for project list items */
+    background: rgb(248, 230, 248); /* Lighter grey for project list items */
     color: black; /* Black text for readability */
 }
 
@@ -461,8 +461,15 @@ body.light-mode .project-list div i {
 }
 
 body.light-mode .project-list div:hover {
-    background: rgb(228, 183, 228); /* Hover effect */
+    background: rgb(252, 213, 252); /* Hover effect */
 }
 
-/*blogs*/
+/*light mode -- blogs*/
+body.light-mode .blog-container{
+    background: rgba(238, 236, 238, 0.806); /* Lighter grey for project list items */
+    color: black; /* Black text for readability */
+}
 
+body.light-mode .blog-container:hover {
+    background: rgb(252, 225, 252); /* Hover effect */
+}
