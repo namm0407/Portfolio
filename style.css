@@ -17,7 +17,7 @@ body{
 
 header {
     position: fixed; /* Make the header fixed */
-    background: linear-gradient(4deg, rgba(25, 23, 26, 0.74), rgb(65, 61, 68));
+    background: linear-gradient(4deg, #2e2e48, #666686);    
     top: 1rem; /* Stick it to the top */
     max-width: 100%; /* Set width */
     left: 50%; /* Move to the center of the page */
@@ -94,7 +94,7 @@ nav ul li a:hover::after {
     font-size: 3.5rem; /* Large text size */
     font-family: 'Arial', sans-serif;
     font-weight: bold;
-    color: rgb(219, 122, 219);
+    color: rgba(215, 158, 231, 0.845);
     text-align: center;
     margin: 200px 0;
     opacity: 0; /* Start invisible */
@@ -181,7 +181,7 @@ nav ul li a:hover::after {
 
 .purple_italic{
     font-style: italic;
-    color: rgb(219, 122, 219);
+    color:  rgba(215, 158, 231, 0.845);
     margin-top: 7%;
     margin-right: 50%;
     margin-bottom: 100px;
@@ -249,7 +249,7 @@ nav ul li a:hover::after {
 }
 
 .project-list div{
-    background: #262626;
+    background: #878ceb3a;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -270,7 +270,7 @@ nav ul li a:hover::after {
 }
 
 .project-list div:hover{
-    background: rgb(193, 145, 193);
+    background: rgba(176, 138, 202, 0.795);
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
@@ -329,7 +329,7 @@ nav ul li a:hover::after {
 /*blog*/
 .blog-container {
     border-left: 6px solid plum;
-    background-color:  #262626 ;
+    background-color:  #878ceb3a ;
     display: flex;
     align-items: center;
     margin: 30px 0;
@@ -347,7 +347,7 @@ nav ul li a:hover::after {
 
 .box {
     border: 2px solid plum;
-    background-color:  #262626 ;
+    background-color:  #878ceb3a ;
     display: flex;
     align-items: center;
     margin: 30px 0;
@@ -409,7 +409,7 @@ body {
     bottom: 20px;
     right: 20px;
     z-index: 1000;
-    background-color:plum;
+    background-color: rgba(215, 158, 231, 0.845);
     color: white;
     border: none;
     border-radius: 50%;
@@ -432,7 +432,7 @@ body {
     bottom: 20px;
     left: 20px;
     z-index: 1000;
-    background-color: rgba(221, 160, 221, 0.954);
+    background-color:  rgba(215, 158, 231, 0.845);
     color: white;
     border: none;
     border-radius: 20px;
@@ -444,7 +444,7 @@ body {
 }
 
 #themeButton:hover {
-    background-color: rgba(221, 160, 221, 0.763);
+    background-color: rgba(255, 183, 255, 0.58);
     transform: scale(1.05);
 }
 
