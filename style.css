@@ -10,7 +10,7 @@ html {
 }
 
 body{
-    background-color: rgb(0, 0, 0);
+    background: #1a1a2e;
     color: rgb(194, 204, 219);
     transition: background-color 0.3s, color 0.3s; 
 }
@@ -386,6 +386,9 @@ body {
   }
 }
 
+/*contact*/
+
+
 /*
 @media (max-width: 600px) {
     .box {
@@ -424,7 +427,7 @@ body {
 }
 
 /*light mode*/
-#theme {
+#themeButton {
     position: fixed;
     bottom: 20px;
     left: 20px;
@@ -440,7 +443,7 @@ body {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-#theme:hover {
+#themeButton:hover {
     background-color: rgba(221, 160, 221, 0.763);
     transform: scale(1.05);
 }
@@ -488,4 +491,11 @@ body.light-mode header {
 
 body.light-mode nav ul li a{
     color: black;
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }

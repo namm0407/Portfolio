@@ -1,6 +1,6 @@
 var collinks = document.getElementsByClassName("col");
 var tabcontents = document.getElementsByClassName("tab-contents");
-const themeButton = document.getElementById('theme');
+const themeButton = document.getElementById('themeButton');
 
 function opentab(event, colname) {
     for(col of collinks) {
@@ -48,11 +48,60 @@ backToTopButton.addEventListener('click', () => {
     });
 });
 
+function initializeParticles(particleColor) {
+    particlesJS("particles-js", {
+        particles: {
+            number: { value: 80, density: { enable: true, value_area: 800 } },
+            color: { value: particleColor },
+            shape: { type: "circle", stroke: { width: 0, color: "#000000" } },
+            opacity: { value: 0.5, random: false },
+            size: { value: 3, random: true },
+            line_linked: {
+                enable: true,
+                distance: 150,
+                color: particleColor,
+                opacity: 0.4,
+                width: 1
+            },
+            move: {
+                enable: true,
+                speed: 2,
+                direction: "none",
+                random: false,
+                straight: false,
+                out_mode: "out",
+                bounce: false
+            }
+        },
+        interactivity: {
+            detect_on: "canvas",
+            events: {
+                onhover: { enable: true, mode: "grab" },
+                onclick: { enable: true, mode: "push" },
+                resize: true
+            },
+            modes: {
+                grab: { distance: 200, line_linked: { opacity: 1 } },
+                push: { particles_nb: 4 }
+            }
+        },
+        retina_detect: true
+    });
+}
+
+// Initialize with dark mode particles
+initializeParticles("#ffffff");
+
+// Your toggle logic with particle update
 themeButton.addEventListener('click', () => {
     document.body.classList.toggle('light-mode');
     if (document.body.classList.contains('light-mode')) {
         themeButton.textContent = 'Light Mode';
+        document.getElementById("particles-js").innerHTML = "";
+        initializeParticles("#333333"); // Dark particles for light mode
     } else {
         themeButton.textContent = 'Dark Mode';
+        document.getElementById("particles-js").innerHTML = "";
+        initializeParticles("#ffffff"); // White particles for dark mode
     }
 });
