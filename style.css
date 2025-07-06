@@ -452,14 +452,14 @@ body {
 }
 
 body.light-mode {
-    background-color: rgb(255, 255, 255); /* White or light background in light mode */
-    color: black; /* Black text for readability in light mode */
+    background-color: rgb(255, 255, 255); 
+    color: black; 
 }
 
 /*light mode -- project*/
 body.light-mode .project-list div {
-    background: rgb(241, 235, 247); /* Lighter grey for project list items */
-    color: black; /* Black text for readability */
+    background: rgb(241, 235, 247); 
+    color: black; 
 }
 
 body.light-mode .project-list div i {
@@ -467,7 +467,7 @@ body.light-mode .project-list div i {
 }
 
 body.light-mode .project-list div:hover {
-    background: rgb(225, 205, 242); /* Hover effect */
+    background: rgb(225, 205, 242);
 }
 
 /*light mode -- blogs*/
@@ -477,13 +477,13 @@ body.light-mode .blog-container{
 }
 
 body.light-mode .blog-container:hover {
-    background: rgb(241, 225, 252); /* Hover effect */
+    background: rgb(241, 225, 252);
 }
 
-/*light mode -- blogs*/
+/*light mode -- cert*/
 body.light-mode .box{
-    background: rgba(238, 236, 238, 0.806); /* Lighter grey for project list items */
-    color: black; /* Black text for readability */
+    background: rgba(238, 236, 238, 0.806); 
+    color: black; 
 }
 
 /*light mode -- header*/
