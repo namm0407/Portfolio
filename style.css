@@ -252,6 +252,10 @@ nav ul li a:hover::after {
     margin-top: 50px;
 }
 
+.project-list i {
+    color: #ffffff;
+}
+
 .project-list div{
     background: #878ceb3a;
     padding: 40px;
@@ -412,7 +416,7 @@ body {
     bottom: 20px;
     right: 20px;
     z-index: 1000;
-    background-color: rgba(215, 158, 231, 0.845);
+    background: linear-gradient(4deg, #8f8fde, #5d5d79);    
     color: white;
     border: none;
     border-radius: 50%;
@@ -425,18 +429,15 @@ body {
 }
 
 #back-to-top:hover {
-    background-color: rgba(221, 160, 221, 0.747);
     transform: scale(1.1);
 }
 
-/*light mode*/
 #themeButton {
     position: fixed;
     bottom: 20px;
     left: 20px;
     z-index: 1000;
-    background-color: rgba(215, 158, 231, 0.845);
-    color: white;
+    background: linear-gradient(4deg, #8f8fde, #5d5d79);    
     border: none;
     border-radius: 20px;
     padding: 10px 15px;
@@ -447,8 +448,19 @@ body {
 }
 
 #themeButton:hover {
-    background-color:  rgba(221, 160, 221, 0.747);
     transform: scale(1.05);
+}
+
+/*light mode*/
+body.light-mode #back-to-top {
+    background: linear-gradient(4deg, rgb(239, 214, 250), rgb(255, 255, 255));
+    color: black;
+    border: 1px solid #65657660;
+}
+
+body.light-mode #themeButton {
+    background: linear-gradient(4deg, rgb(239, 214, 250), rgb(253, 249, 255));
+    color: black;
 }
 
 body.light-mode {
@@ -509,5 +521,10 @@ body.light-mode .x-icon {
 }
 
 body.light-mode .homeText i {
+    color: black;
+}
+
+/*light mode project icon*/
+body.light-mode .project-list i {
     color: black;
 }
