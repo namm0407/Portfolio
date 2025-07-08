@@ -409,7 +409,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 25px;
-    padding: 10px;
+    padding: 15px;
     border: 1px solid #e0e0e0;
     border-radius: 5px;
     background: #666690;
@@ -557,4 +557,25 @@ body.light-mode .homeText i {
 /*light mode project icon*/
 body.light-mode .project-list i {
     color: black;
+}
+
+/*light mode -- contact*/
+body.light-mode .contact-container {
+    background: rgba(237, 230, 242, 0.806); /* Lighter grey for project list items */
+}
+
+body.light-mode .contact-box {
+    background-color: #ead1f0d4;
+}
+
+body.light-mode .contact-box:hover {
+
+}
+
+body.light-mode .contact-box .label {
+    color: #1a1a2e;
+}
+
+body.light-mode .contact-box .value {
+    color: #5d5d79;
 }
