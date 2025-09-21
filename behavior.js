@@ -88,15 +88,21 @@ function initializeParticles(particleColor) {
         retina_detect: true
     });
 }
+document.addEventListener('DOMContentLoaded', () => {
+    // Default to dark mode
+    initializeParticles("#ffffff"); // White particles for dark mode
+});
 
 themeButton.addEventListener('click', () => {
     document.body.classList.toggle('light-mode');
+    
     if (document.body.classList.contains('light-mode')) {
         themeButton.innerHTML = '<i class="fa-solid fa-moon"></i>';
         document.getElementById("particles-js").innerHTML = "";
-        initializeParticles("#ffffff");    
+        initializeParticles("#333333");
     } else {
-        themeButton.innerHTML = '<i class="fa-solid fa-sun"></i>';
+        themeButton.innerHTML = '<i class="fa-regular fa-sun" style="color: #ffffff;"></i>';
         document.getElementById("particles-js").innerHTML = "";
-        initializeParticles("#333333");    }
+        initializeParticles("#ffffff");
+    }
 });
