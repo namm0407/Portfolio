@@ -89,19 +89,14 @@ function initializeParticles(particleColor) {
     });
 }
 
-// Initialize with dark mode particles
-initializeParticles("#ffffff");
-
-// Your toggle logic with particle update
 themeButton.addEventListener('click', () => {
     document.body.classList.toggle('light-mode');
     if (document.body.classList.contains('light-mode')) {
-        themeButton.textContent = 'Light Mode';
+        themeButton.innerHTML = '<i class="fa-solid fa-moon"></i>';
         document.getElementById("particles-js").innerHTML = "";
-        initializeParticles("#333333"); // Dark particles for light mode
+        initializeParticles("#ffffff");    
     } else {
-        themeButton.textContent = 'Dark Mode';
+        themeButton.innerHTML = '<i class="fa-solid fa-sun"></i>';
         document.getElementById("particles-js").innerHTML = "";
-        initializeParticles("#ffffff"); // White particles for dark mode
-    }
+        initializeParticles("#333333");    }
 });
