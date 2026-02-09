@@ -480,8 +480,26 @@ body {
     cursor: pointer; 
 }
 
+.skills {
+    font-style: italic; 
+    background: #d172f35b; 
+    padding: 4px 13px; 
+    border-radius: 999px; 
+    margin: 10px 0px 0px 6px;
+    font-size: 13px;
+}
+
 
 /*light mode*/
+.skills {
+    font-style: italic; 
+    background: #c9a1d75b; 
+    padding: 4px 13px; 
+    border-radius: 999px; 
+    margin: 10px 0px 0px 6px;
+    font-size: 13px;
+}
+
 body.light-mode #back-to-top {
     background: linear-gradient(4deg, rgb(239, 214, 250), rgb(255, 255, 255));
     color: black;
