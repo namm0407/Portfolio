@@ -485,20 +485,44 @@ body {
     background: #d172f35b; 
     padding: 4px 13px; 
     border-radius: 999px; 
-    margin: 10px 0px 0px 6px;
+    margin: 3px 3px; /* Changed from 10px 0px 0px 6px */
     font-size: 13px;
+    display: inline-block; /* This is the key fix */
+    vertical-align: top;
 }
 
+.experience-item {
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    margin: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.experience-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.experience-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+
+.experience-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: rgb(219, 122, 219);
+}
 
 /*light mode*/
-.skills {
-    font-style: italic; 
-    background: #c9a1d75b; 
-    padding: 4px 13px; 
-    border-radius: 999px; 
-    margin: 10px 0px 0px 6px;
-    font-size: 13px;
-}
 
 body.light-mode #back-to-top {
     background: linear-gradient(4deg, rgb(239, 214, 250), rgb(255, 255, 255));
@@ -593,3 +617,4 @@ body.light-mode .contact-box .label {
 body.light-mode .contact-box .value {
     color: #5d5d79;
 }
+
