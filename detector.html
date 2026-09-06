@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detector</title>
+    <style>
+        body {
+            background: black;
+            color: aliceblue;
+            padding: 20px 10%; /* Applied padding to body instead of all elements */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            padding: 10px 0;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            width: 100%;
+        }
+
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            background: #111;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        a {
+            display: inline-block;
+            background-color: #444;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #666;
+        }
+
+        .link-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            background-color: #444;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Object Detector</h1>
+
+    <p>Object Detection: Uses YOLOv8l-world models for fast and accurate object identification and classification</p>
+    <br>
+    <p>Here is the demo video:</p>
+
+    <div class="video-container">
+        <div class="video-wrapper">
+            <iframe 
+                src="https://drive.google.com/file/d/1J6yX392Kod1KflAwHR6tX1_WS7zenUL-/preview" 
+                allow="autoplay"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <div class="link-container">
+        <a href="https://github.com/namm0407/object-detector" target="_blank" rel="noopener noreferrer">Go to GitHub</a>
+    </div>
+
+    <button onclick="window.close()">Close Tab</button>
+</body>
+</html>

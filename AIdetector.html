@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real time AI Object Detector</title>
+    <style>
+        body {
+            background: black;
+            color: aliceblue;
+            padding: 20px 10%; /* Applied padding to body instead of all elements */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            padding: 10px 0;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            width: 100%;
+        }
+
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            background: #111;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        a {
+            display: inline-block;
+            background-color: #444;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #666;
+        }
+
+        .link-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            background-color: #444;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Real time AI Object Detector using VLM</h1>
+
+    <p>This project combines real-time object detection using YOLOv8 with a vision-language model (Qwen-VL) to create an interactive object detection and questioning system. When a specified object is detected in the webcam feed, the system captures an image and initiates a chatbot that can answer questions about the captured image.</p>
+    <br>
+    <p>Here is How It Works</p>
+    <p>1. User Input: You specify what object to detect (e.g., "car", "dog", "red cup")</p>
+    <p>2. Real-time Object Detection: The system uses YOLOv8 to continuously detects objects in real-time. Detected objects (non-target) are shown with green bounding boxes.</p>
+    <p>3. Image Capture: When the object is detected, an image of the scene is captured and automatically saved. Target object is highlighted with a red bounding box.</p>
+    <p>4. Vision-Language Model: The captured image is analyzed by the Qwen-VL model to understand its content and generates a description of the captured image</p>
+    <p>5. Question Answering: The system initiates a chatbot that can answer questions about the captured image</p>
+    <br>
+
+    <div class="link-container">
+        <a href="https://github.com/namm0407/real-time-object-detector-with-VLM" target="_blank" rel="noopener noreferrer">Go to GitHub</a>
+    </div>
+
+    <button onclick="window.close()">Close Tab</button>
+</body>
+</html>
